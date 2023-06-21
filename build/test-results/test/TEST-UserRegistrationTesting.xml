@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-21T13:53:34" hostname="GANESH" time="0.035">
+<testsuite name="UserRegistrationTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-21T14:07:56" hostname="GANESH" time="0.029">
   <properties/>
-  <testcase name="WhenGivenMobileNumberIsNotValidThenReturnFalse()" classname="UserRegistrationTesting" time="0.035"/>
+  <testcase name="WhenGivenPasswordIsNotHavingEightCharacterThenReturnFalse()" classname="UserRegistrationTesting" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

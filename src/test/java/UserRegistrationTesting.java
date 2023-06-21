@@ -56,6 +56,16 @@ public class UserRegistrationTesting {
         boolean result = user.getMobileNum("91 897666892011");
         Assertions.assertEquals(false,result);
     }
+    @Test
+    void WhenGivenPasswordIsHavingEightCharacterThenReturnTrue(){
+        boolean result = user.getPassword("Abcdhyeg");
+        Assertions.assertEquals(true,result);
+    }
+    @Test
+    void WhenGivenPasswordIsNotHavingEightCharacterThenReturnFalse(){
+        boolean result = user.getPassword("Abcdhy");
+        Assertions.assertEquals(false,result);
+    }
 
 }
 

@@ -20,4 +20,9 @@ public class UserRegistration {
                 Pattern.matches("(91)[ ][0-9]{10}",mobileNum);
     }
 
+    public boolean getPassword(String Password){
+        return
+                Pattern.matches("[A-Za-z]{8,}",Password);
+    }
+
 }
