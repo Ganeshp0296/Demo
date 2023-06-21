@@ -10,5 +10,9 @@ public class UserRegistration {
         return
                 Pattern.matches("[A-Z][a-z]{2,}",lName);
     }
+    public boolean getEmail(String email){
+        return
+                Pattern.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$",email);
+    }
 
 }

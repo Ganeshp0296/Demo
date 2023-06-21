@@ -36,6 +36,16 @@ public class UserRegistrationTesting {
         boolean result = user.getLName("pa");
         Assertions.assertEquals(false,result);
     }
+    @Test
+    void WhenGivenEmailIsValidateThenReturnTrue(){
+        boolean result = user.getEmail("abc.xyz@bl.co.in");
+        Assertions.assertEquals(true,result);
+    }
+    @Test
+    void WhenGivenEmailIsNotValidateThenReturnFalse(){
+        boolean result = user.getEmail("2:ganesh@bl.co");
+        Assertions.assertEquals(false,result);
+    }
 
 }
 
