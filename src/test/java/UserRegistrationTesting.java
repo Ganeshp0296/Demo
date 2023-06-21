@@ -11,16 +11,31 @@ public class UserRegistrationTesting {
 
     @Test
     void WhenGivenNameFirstLetterIsSmallThenReturnFalse(){
-        Boolean result = user.getName("ganesh");
+        boolean result = user.getName("ganesh");
         Assertions.assertEquals(false,result);
     }
 
     @Test
     void WhenGivenNameIsHavingLessThanThreeLetterThenReturnFalse(){
-        Boolean result = user.getName("Ga");
+        boolean result = user.getName("Ga");
         Assertions.assertEquals(false,result);
     }
 
+    @Test
+    void WhenGivenLastNameIsValidateThenRerturnTrue(){
+        boolean result = user.getLName("Pawar");
+        Assertions.assertEquals(true,result);
+    }
+    @Test
+    void WhenGivenLastNameFirstCharacterIsSmallThenRerturnFalse(){
+        boolean result = user.getLName("pawar");
+        Assertions.assertEquals(false,result);
+    }
+    @Test
+    void WhenGivenLastNameIsHavingLessThanThreeCharacterThenReturnFalse(){
+        boolean result = user.getLName("pa");
+        Assertions.assertEquals(false,result);
+    }
 
 }
 

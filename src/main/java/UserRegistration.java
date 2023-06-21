@@ -6,5 +6,9 @@ public class UserRegistration {
         return
         Pattern.matches("[A-Z][a-z]{2,}",name);
     }
+    public boolean getLName(String lName){
+        return
+                Pattern.matches("[A-Z][a-z]{2,}",lName);
+    }
 
 }
