@@ -15,4 +15,9 @@ public class UserRegistration {
                 Pattern.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$",email);
     }
 
+    public boolean getMobileNum(String mobileNum){
+        return
+                Pattern.matches("(91)[ ][0-9]{10}",mobileNum);
+    }
+
 }

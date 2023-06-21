@@ -46,6 +46,16 @@ public class UserRegistrationTesting {
         boolean result = user.getEmail("2:ganesh@bl.co");
         Assertions.assertEquals(false,result);
     }
+    @Test
+    void WhenGivenMobileNumberIsValidThenReturnTrue(){
+        boolean result = user.getMobileNum("91 8976668920");
+        Assertions.assertEquals(true,result);
+    }
+    @Test
+    void WhenGivenMobileNumberIsNotValidThenReturnFalse(){
+        boolean result = user.getMobileNum("91 897666892011");
+        Assertions.assertEquals(false,result);
+    }
 
 }
 
