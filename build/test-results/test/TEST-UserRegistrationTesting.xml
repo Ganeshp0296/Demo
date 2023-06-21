@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-21T14:07:56" hostname="GANESH" time="0.029">
+<testsuite name="UserRegistrationTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-21T19:00:36" hostname="GANESH" time="0.03">
   <properties/>
-  <testcase name="WhenGivenPasswordIsNotHavingEightCharacterThenReturnFalse()" classname="UserRegistrationTesting" time="0.029"/>
+  <testcase name="WhenGivenPasswordIsNotHavingAtLeastOneUpperCaseCharacterThenReturnFalse()" classname="UserRegistrationTesting" time="0.03"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

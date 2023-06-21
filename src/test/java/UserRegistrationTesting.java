@@ -66,6 +66,16 @@ public class UserRegistrationTesting {
         boolean result = user.getPassword("Abcdhy");
         Assertions.assertEquals(false,result);
     }
+    @Test
+    void WhenGivenPasswordIsHavingAtLeastOneUpperCaseCharacterThenReturnTrue(){
+        boolean result = user.getPassword("Abcdhyfd");
+        Assertions.assertEquals(true,result);
+    }
+    @Test
+    void WhenGivenPasswordIsNotHavingAtLeastOneUpperCaseCharacterThenReturnFalse(){
+        boolean result = user.getPassword("abcdhyfd");
+        Assertions.assertEquals(false,result);
+    }
 
 }
 
