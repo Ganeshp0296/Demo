@@ -81,5 +81,10 @@ public class UserRegistrationTesting {
         boolean result = user.getPassword("G@nesh02");
         Assertions.assertEquals(true,result);
     }
+    @Test
+    void WhenGivenEmailIsValidThenReturnTrue(){
+        boolean result = user.getEmailIdValidator("Ganeshp457@gmail.com");
+        Assertions.assertEquals(true,result);
+    }
 }
 

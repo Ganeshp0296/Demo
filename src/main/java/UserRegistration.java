@@ -1,3 +1,4 @@
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
@@ -24,4 +25,10 @@ public class UserRegistration {
         return
                 Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$",Password);
     }
+
+    public boolean getEmailIdValidator(String emailId) {
+        return
+        Pattern.matches("^[a-z0-9]{3,}+([_+-.][a-z0-9]{3,}+)*@[a-z0-9]+.[a-z]{2,3}+(.[a-z]{2,3}){0,1}$",emailId);
+    }
 }
+
