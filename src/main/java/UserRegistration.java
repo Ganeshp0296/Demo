@@ -22,7 +22,6 @@ public class UserRegistration {
 
     public boolean getPassword(String Password){
         return
-                Pattern.matches("(?=.*[A-Z])[A-Za-z]{8,}",Password);
+                Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$",Password);
     }
-
 }

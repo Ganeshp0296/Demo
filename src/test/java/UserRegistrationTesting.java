@@ -76,6 +76,10 @@ public class UserRegistrationTesting {
         boolean result = user.getPassword("abcdhyfd");
         Assertions.assertEquals(false,result);
     }
-
+    @Test
+    void WhenGivenPasswordIsHavingAtleastOneNumericThenReturnTrue(){
+        boolean result = user.getPassword("G@nesh02");
+        Assertions.assertEquals(true,result);
+    }
 }
 
